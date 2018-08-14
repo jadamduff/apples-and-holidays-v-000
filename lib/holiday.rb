@@ -84,4 +84,5 @@ def all_holidays_with_bbq(holiday_hash)
         key << bbq_holidays if val.include?("BBQ")
     end
   end
+  return bbq_holidays
 end
