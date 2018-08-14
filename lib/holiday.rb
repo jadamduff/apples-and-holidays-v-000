@@ -65,7 +65,7 @@ def all_supplies_in_holidays(holiday_hash)
       supplies = val.join(", ")
       if holiday.split("_").size > 1
         holiday_arr = holiday.split("_")
-        holiday_arr each {|i| i.capitalize!}
+        holiday_arr.each {|i| i.capitalize!}
         holiday = holiday_arr.join(" ")
       else
         holiday = holiday.capitalize!
