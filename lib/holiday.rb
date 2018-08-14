@@ -67,7 +67,7 @@ def all_supplies_in_holidays(holiday_hash)
       season = season.capitalize!
     end
     puts "#{season}:"
-    key.each do |key, val|
+    val.each do |key, val|
       holiday = key.to_s
       supplies = val.join(", ")
       if holiday.split.size > 1
