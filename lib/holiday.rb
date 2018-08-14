@@ -81,7 +81,7 @@ def all_holidays_with_bbq(holiday_hash)
   bbq_holidays = []
   holiday_hash.each do |key, val|
     val.each do |key, val|
-        key << bbq_holidays if val.include?("BBQ")
+        bbq_holidays << key if val.include?("BBQ")
     end
   end
   return bbq_holidays
